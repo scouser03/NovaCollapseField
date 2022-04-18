@@ -15,7 +15,10 @@ composer require scouser03/nova-collapse-field
 ```php
 namespace App\Nova;
 
-use Spatie\TagsField\Tags;
+use Laravel\Nova\Panel;
+use Laravel\Nova\Fields\Text;
+use Scouser03\NovaCollapseField\NovaCollapseField;
+
 
 class BlogPost extends Resource
 {
