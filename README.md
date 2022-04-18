@@ -27,7 +27,7 @@ class BlogPost extends Resource
             // ...
             
             (new Panel('Panel name', [
-                NovaCollapseField::make('collapse'),
+                NovaCollapseField::make('Panel name'),
                 Text::make(__('Tag'), 'tag')
                     ->creationRules('required')
                     ->rules('required')
@@ -40,6 +40,9 @@ class BlogPost extends Resource
     }
 }
 ```
+
+
+### Panel name and NovaCollapseField name must be same.
 
 ->help() method is required 
 
