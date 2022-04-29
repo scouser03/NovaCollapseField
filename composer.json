@@ -1,9 +1,17 @@
 {
     "name": "scouser03/nova-collapse-field",
-    "description": "A Laravel Nova field.",
+    "description": "A collapse field for Laravel Nova",
+     "authors": [
+        {
+            "name": "Khvicha Ostatishvili",
+            "email": "khvicha.ostatishvili29@gmail.com"
+        }
+    ],
     "keywords": [
         "laravel",
-        "nova"
+        "nova",
+        "collapse",
+        "panel"
     ],
     "license": "MIT",
     "require": {
