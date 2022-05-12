@@ -2,7 +2,7 @@ export function overridePanel(attribute) {
     var h1 = document.getElementsByTagName('h1')
     var found
     for (var i = 0; i < h1.length; i++) {
-        if (h1[i].textContent == attribute) {
+        if (h1[i].textContent.includes(attribute)) {
             found = h1[i]
             break
         }

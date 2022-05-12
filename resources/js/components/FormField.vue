@@ -8,7 +8,7 @@ export default {
     props: ['resourceName', 'resourceId', 'field'],
 
     mounted() {
-        overridePanel(this.field.attribute)
+        overridePanel(this.field.name)
     },
     methods: {
         /*
