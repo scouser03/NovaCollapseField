@@ -1,9 +1,14 @@
 export function overridePanel(attribute) {
-    const h1 = Array.from(document.querySelectorAll('h1')).find(
-        item => item.textContent == attribute
-    )
+    var h1 = document.getElementsByTagName('h1')
+    var found
+    for (var i = 0; i < h1.length; i++) {
+        if (h1[i].textContent == attribute) {
+            found = h1[i]
+            break
+        }
+    }
 
-    const helpText = h1.nextElementSibling
+    const helpText = found.nextElementSibling
 
     helpText.classList.add('ml-1')
 
@@ -13,9 +18,9 @@ export function overridePanel(attribute) {
 
     createElement.classList.add('flex', 'items-center', 'cursor-pointer')
 
-    const parent = h1.parentElement
+    const parent = found.parentElement
 
-    createElement.appendChild(h1)
+    createElement.appendChild(found)
 
     createElement.appendChild(helpText)
 
