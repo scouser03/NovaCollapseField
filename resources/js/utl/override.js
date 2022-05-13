@@ -29,6 +29,13 @@ export function overridePanel(attribute) {
     const card = createElement.nextElementSibling
 
     createElement.addEventListener('click', function() {
-        card.classList.toggle('invisible')
+        if (
+            card.style.cssText == 'display: block;' ||
+            card.style.cssText == ''
+        ) {
+            card.style.display = 'none'
+        } else {
+            card.style.display = 'block'
+        }
     })
 }
